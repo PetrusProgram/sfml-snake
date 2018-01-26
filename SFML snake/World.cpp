@@ -2,8 +2,6 @@
 #include <random>
 #include <iostream>
 World::World(sf::Vector2u l_windSize, Snake& snake) : m_snake(snake) {
-	m_blockSize = 16;
-
 	m_windowSize = l_windSize;
 	RespawnApple();
 	m_appleShape.setFillColor(sf::Color::Red);

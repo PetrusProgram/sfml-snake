@@ -1,9 +1,9 @@
 #include "Window.hpp"
 Window::Window() { Setup("Window", sf::Vector2u(640, 480)); }
-Window::Window(const std::string& title, const sf::Vector2u& size) { Setup(title, size); }
+Window::Window(const std::string_view title, const sf::Vector2u& size) { Setup(title, size); }
 Window::~Window() { Destroy(); }
 
-void Window::Setup(const std::string title, const sf::Vector2u& size) {
+void Window::Setup(const std::string_view title, const sf::Vector2u& size) {
 	m_windowTitle = title;
 	m_windowSize = size;
 	m_isFullscreen = false;

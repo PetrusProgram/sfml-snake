@@ -14,7 +14,7 @@ public:
 private:
 	sf::Vector2u m_windowSize;
 	sf::Vector2i m_item;
-	int m_blockSize;
+	int m_blockSize{ 16 };
 	 Snake& m_snake;
 	sf::CircleShape m_appleShape;
 	std::array<sf::RectangleShape, 4> m_bounds;

@@ -15,7 +15,6 @@ void Game::RestartClock() { m_elapsed += m_clock.restart().asSeconds(); }
 Window* Game::GetWindow() { return &m_window; }
 
 void Game::HandleInput() {
-	// Input handling.
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)
 		&& m_snake.GetPhysicalDirection() != Direction::Down) {
 		m_snake.SetDirection(Direction::Up);
